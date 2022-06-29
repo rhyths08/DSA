@@ -9,6 +9,10 @@ public class Main {
         sLL.insertInLinkedList(9, 0);
         sLL.traverseSinglyLinkedList();
         sLL.searchNode(7);
+        sLL.deleteInLinkedList(5);
+        sLL.traverseSinglyLinkedList();
+        sLL.deleteSLL();
+        sLL.traverseSinglyLinkedList();
 
         //System.out.println(sLL.head.next.next.value);
 
