@@ -176,9 +176,14 @@ public class CircularDoublyLinkedList {
     //Delete Entire DoublyLinkedList
     public void deleteDLL()
     {
+        Node tempNode = head;
+        for (int i=0; i<size; i++) {
+        tempNode.prev = null;
+        tempNode = tempNode.next;
+        }
         head = null;
         tail = null;
-        System.out.println("The DLL deleted successfully;");
+        System.out.println("The CDLL has been deleted!");
     }
 
 }
