@@ -1,4 +1,4 @@
-public class Main{
+public class MainLL{
     public static void main(String[] args) {
         BinaryTreeLL binaryTree = new BinaryTreeLL();
         /*BinaryNode N1 = new BinaryNode();
