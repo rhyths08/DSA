@@ -10,13 +10,19 @@ class MainArr {
         newBinaryTree.insert("N7");
         newBinaryTree.insert("N8");
         newBinaryTree.insert("N9");
-        System.out.println();
+        System.out.println("PREORDER TRAVERSAL: ");
         newBinaryTree.preOrder(1);
-        System.out.println();
+        System.out.println("\nINORDER TRAVERSAL: ");
         newBinaryTree.inOrder(1);
-        System.out.println();
+        System.out.println("\nPOSTORDER TRAVERSAL: ");
         newBinaryTree.postOrder(1);
-        System.out.println();
+        System.out.println("\nLEVEL ORDER: ");
         newBinaryTree.levelOrder();
+        System.out.println();
+        newBinaryTree.Search("N7");
+        newBinaryTree.Delete("N5");
+        newBinaryTree.levelOrder();
+        System.out.println();
+        newBinaryTree.deleteBT();
     }
 }

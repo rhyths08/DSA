@@ -65,4 +65,37 @@ public class BinaryTreeArr {
             System.out.print(arr[i]+" ");
         }
     }
+
+    //Search Method
+    public int Search(String value){
+        for(int i = 1; i<=lastUsedIndex; i++){
+            if(arr[i]==value){
+                System.out.println("The value "+value+" is present at index: "+i);
+                return i;
+            }
+        }
+        System.out.println("The given value: "+value+"is not present");
+        return -1;
+    }
+
+    //Delete a single node
+    public void Delete(String value){
+        int pos = Search(value);
+        if(pos!=-1){
+            arr[pos] = arr[lastUsedIndex];
+            lastUsedIndex--;
+            System.out.println("the node is deleted!");
+            return;
+        }
+        System.out.println("The node does not exist in this BT");
+    }
+
+    void deleteBT(){
+        try{
+            arr = null;
+            System.out.println("BT deleted successfully");
+        }catch(Exception e){
+            System.out.println("There was an error deleting the tree");
+        }
+       }
 }
