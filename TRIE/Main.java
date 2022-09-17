@@ -8,5 +8,8 @@ class Main
         newTrie.search("APIS");
         newTrie.search("AP");
         newTrie.search("BCD");
+        newTrie.delete("APIS");
+        newTrie.search("API");
+        newTrie.search("APIS");
     }
 }
